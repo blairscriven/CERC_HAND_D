@@ -16,8 +16,19 @@ import os
 inZoneData = arcpy.GetParameterAsText(4)
 zoneField = "FID"
 
-Water_Rough = arcpy.GetParameterAsText(9)
+#Set the roughness for the river channel
+Water_Rough_text = arcpy.GetParameterAsText(9)
+Water_Rough = 0.045
+if Water_Rough_text == "Clean; Straight":
+    Water_Rough = 0.03
+elif Water_Rough_text == "Rocks+Vegetation; Straight":
+    Water_Rough = 0.035
+elif Water_Rough_text == "Clean; Winding":
+    Water_Rough = 0.04
+elif Water_Rough_text == "Rocks+Vegetation; Winding":
+    Water_Rough = 0.045
 Water_Rough_flt = float(Water_Rough)
+arcpy.AddMessage("Channel Rough: " + str(Water_Rough))
 
 #Insert Hand Model and Stage  level
 HAND_Raw = arcpy.GetParameterAsText(0)
