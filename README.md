@@ -7,8 +7,7 @@ This tool was designed to work with input data soured from the Open Government d
 
 High Resolution Digital Elevation Model (HRDEM) - CanElevation Series: https://open.canada.ca/data/en/dataset/957782bf-847c-4644-a757-e383c0057995
 
-National Hydrographic Network: https://www.nrcan.gc.ca/science-and-data/science-and-research/earth-sciences/geography/topographic-information/geobase-
-                               surface-water-program-geeau/national-hydrographic-network/21361
+National Hydrographic Network: https://www.nrcan.gc.ca/science-and-data/science-and-research/earth-sciences/geography/topographic-information/geobase-surface-water-program-geeau/national-hydrographic-network/21361
 
 Alternative data sources may reduce the quality of the results or prevent the tool from functioning. The National HydroGraphic Network does not provide attribute data on Stahler
 order, so an alternative source for river network data may be preferred.Ideally, the area of interest should have around 1.5-3 km length of river (high order stahler) and a river 
