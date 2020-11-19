@@ -43,6 +43,8 @@ arcpy.Intersect_analysis ([inZoneData, All_River_lines], Output_Flowlines, "ONLY
 arcpy.AddField_management(Output_Flowlines,'LENGTH','DOUBLE')
 arcpy.CalculateField_management(Output_Flowlines,'LENGTH','!shape.length@meters!','PYTHON')
 
+
+
 RiverLength = int(0)
 
 with arcpy.da.SearchCursor(Output_Flowlines, 'SHAPE@LENGTH') as cursor:
@@ -176,10 +178,13 @@ Maximum_Elevation = max(Elevation_list)
 Minimum_Elevation = min(Elevation_list)
 
 Slope = (Maximum_Elevation - Minimum_Elevation)/ RiverLength
+if Slope > 1 or Slope <= 0:
+    Slope = 0.002
 
 arcpy.AddMessage("Maximum_Elevation: " + str(Maximum_Elevation))
 arcpy.AddMessage("Minimum_Elevation: " + str(Minimum_Elevation))
 arcpy.AddMessage("Slope: " + str(Slope))
+arcpy.AddMessage("River Length: " + str(RiverLength))
 
 arcpy.Delete_management(Output_Verticles)
 arcpy.Delete_management(Output_Verticles_elevation)
