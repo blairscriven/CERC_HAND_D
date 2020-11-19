@@ -97,6 +97,8 @@ Maximum_Elevation = max(Elevation_list)
 Minimum_Elevation = min(Elevation_list)
 
 Slope = (Maximum_Elevation - Minimum_Elevation)/ RiverLength
+if Slope > 1 or Slope <= 0:
+    Slope = 0.002
 
 arcpy.AddMessage("Maximum_Elevation: " + str(Maximum_Elevation))
 arcpy.AddMessage("Minimum_Elevation: " + str(Minimum_Elevation))
