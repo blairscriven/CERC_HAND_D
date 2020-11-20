@@ -9,6 +9,5 @@ High Resolution Digital Elevation Model (HRDEM) - CanElevation Series: https://o
 
 National Hydrographic Network: https://www.nrcan.gc.ca/science-and-data/science-and-research/earth-sciences/geography/topographic-information/geobase-surface-water-program-geeau/national-hydrographic-network/21361
 
-Alternative data sources may reduce the quality of the results or prevent the tool from functioning. The National HydroGraphic Network does not provide attribute data on Stahler
-order, so an alternative source for river network data may be preferred.Ideally, the area of interest should have around 1.5-3 km length of river (high order stahler) and a river 
+CERC-HAND-D requires a Height Above Nearest Drainage (HAND) raster file; a HAND raster can be created using the datasets listed above. Alternative data sources may reduce the quality of the results or prevent the tool from functioning. The National HydroGraphic Network does not provide attribute data on Stahler order, so an alternative source for river network data may be preferred.Ideally, the area of interest should have around 1.5-3 km length of river (high order stahler) and a river 
 slope less than 0.001%. Keeping within these guidelines will produce the most accurate results possible. 
