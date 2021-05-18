@@ -93,16 +93,7 @@ with arcpy.da.UpdateCursor(LandClass_table, Roughness_update_Feilds) as cursor_a
        row[1] = options_dict.get(row[0], 0.033)
        cursor_area.updateRow(row)
 
-# original manning values
-#        options_dict = {1: 0.1, 2: 0.1, 5: 0.1, 6: 0.1, 8: 0.07, 10: 0.03, 11: 0.05,
-#                         12: 0.035, 13: 0.027, 14: 0.035, 15: 0.037, 16: 0.03, 17: 0.05,
-#                          18: Water_Rough, 19: 0.07}
-#New Mannig Values    
-#        options_dict = {101: 0.2, 601: 0.2, 801: 0.023, 1401: 0.2, 1402: 0.2, 1501: 0.2, 1502: 0.02,
-#                         1503: 0.259, 1504: 0.2, 1505: 0.259, 1506: 0.259, 1507: 0.2, 1508: 0.1, 1509: 0.259,
-#                         1510: 0.259, 1511: 0.2, 1701: 0.2, 1702: 0.013, 1703: 0.013, 1704: 0.013, 1705: 0.013, 
-#                         1801: Water_Rough}
-#
+
 
 ### Get Min(Q1) and Medium (Q2) roughness values
 Landfields_Q1 = ['RoughCoef']
