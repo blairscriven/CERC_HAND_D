@@ -18,3 +18,5 @@ If you need to create a HAND model or a Watershed polygon of your study area, yo
 https://www.caee.utexas.edu/prof/maidment/giswr2018/Ex5/Ex52018.pdf
 
 More info on how to use the tool is available from this ArcGIS StoryMap: https://storymaps.arcgis.com/stories/468e09a0cbe24aa68193be42404e1f60
+
+If you have any issues, please contact me at scrivenblair@gmail.com
